@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" /> <!-- make into own -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Ursine</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="name">Ursine</h1>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#absoluteName">About</a></li>
+            <li><a href="#TextAnalysis">Text Analysis</a></li>
+            <li><a href="#StockAnalysis">Stock Sentiment Analysis</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <h1 id="absoluteName">Ursine</h1>
+    <div id="headerTab">Menu</div>
+    <main>
+      <section id="about"> 
+          <h2>What is Ursine?</h2>
+          <p>Ursine is an advanced financial sentiment analysis tool built with Python. It leverages the power of the distilBERT model, meticulously fine-tuned on financial news data, to deliver precise sentiment insights. Whether analyzing market trends or dissecting corporate reports, Ursine offers a robust, machine-learning-driven solution to decode the sentiment behind financial information, enabling smarter, data-driven decisions.</p>
+      </section>
+      <section id="TextAnalysis">
+          <h2>Text Analysis</h2>
+          <p>Details of our services.</p>
+      </section>
+      <section id="StockAnalysis">
+          <h2>Stock Analysis</h2>
+          <p>How to contact us.</p>
+      </section>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
