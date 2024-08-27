@@ -25,17 +25,28 @@
     <main>
       <section id="about"> 
           <h2>What is Ursine?</h2>
-          <p>Ursine is an advanced financial sentiment analysis tool built with Python. It leverages the power of the distilBERT model, meticulously fine-tuned on financial news data, to deliver precise sentiment insights. Whether analyzing market trends or dissecting corporate reports, Ursine offers a robust, machine-learning-driven solution to decode the sentiment behind financial information, enabling smarter, data-driven decisions.</p>
+          <p>
+            Ursine is a financial sentiment analysis tool built with Python. It leverages the power of the distilBERT model which was fine-tuned on
+            financial news data, to deliver precise sentiment insights. Ursine offers a solution to generalize the sentiment behind financial 
+            articles, enabling smarter and more educated financial decisions. 
+          </p>
       </section>
       <section id="TextAnalysis">
-          <h2>Text Analysis</h2>
-          <p>Details of our services.</p>
+        <h2>Text Analysis</h2>
+        <p>
+          This tool is used to determine the sentiment of financial text with a relatively high
+          degree of accurate with the model demonstrating up to a 88.9% accurate with the test set.
+        </p>
+        <div id="TextAnalysis-container">
+          <textarea id="TextAnalysis-input" placeholder="Input a financial text to test this model out"></textarea>
+          <div id="TextAnalysis-output"></div>
+        </div>
       </section>
-      <section id="StockAnalysis">
+      <section id="StockAnalysis" class="lastSection">
           <h2>Stock Analysis</h2>
-          <p>How to contact us.</p>
+          <p>This tool is used to determine the general news sentiment of a user selected stock that is trading on the SP500. Try it out below.</p>
       </section>
     <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
