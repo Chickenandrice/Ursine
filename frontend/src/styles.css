@@ -152,6 +152,10 @@ section {
   z-index: 1;
 }
 
+.lastSection {
+  margin-bottom: 0;
+}
+
 #about {
   padding: 0 30%;
   border: white solid;
@@ -185,7 +189,7 @@ section {
   gap: 2%;
   margin: 0 1rem;
   padding: 0 1rem;
-  z-index: 1;
+  z-index: 1; 
 }
 
 #TextAnalysis-input {
@@ -198,12 +202,7 @@ section {
   border-radius: 10px;
   flex-wrap: wrap;
   resize: none;
-  display:relative;
 
-}
-
-input::placeholder {
-  margin:0;
 }
 
 #TextAnalysis-output {
@@ -213,7 +212,6 @@ input::placeholder {
   font-size: 18px;   
   border: 2px solid white;
   border-radius: 10px;
-  display:relative;
 }
 
 @media(max-width: 1000px) {
@@ -226,10 +224,12 @@ input::placeholder {
   height: 100vh;
 }
 
-#StockAnalysis {
-  border: white solid;
-  width: 100vw;
-  height: 100vh;
+#StockAnalysis h2 {
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
-
+#StockAnalysis p {
+  margin-bottom: 10px;
+  padding-left: 10px;
+}

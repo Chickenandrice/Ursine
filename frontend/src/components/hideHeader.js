@@ -5,10 +5,8 @@ export function hideHeader() {
 
     window.addEventListener('scroll', () => {
         const currentScrollPosition = window.scrollY;
-        if (currentScrollPosition > header.offsetHeight){
-            if (currentScrollPosition != lastScrollPosition) {
-                header.style.transform = 'translateY(-100%)';
-            }
+        if (currentScrollPosition != lastScrollPosition) {
+            header.style.transform = 'translateY(-100%)';
         }
         lastScrollPosition = currentScrollPosition;
     });
@@ -16,6 +14,7 @@ export function hideHeader() {
     headerTab.addEventListener('click', () => {
         header.style.transform = 'translateY(0%)';
     });
+
   }
 
 
